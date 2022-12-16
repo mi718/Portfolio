@@ -151,6 +151,7 @@ h2{
   display: flex;
   width: 24vw;
   border-radius: 8%;
+  flex-grow: 1;
 }
 
 #ulme{
@@ -190,12 +191,12 @@ h2{
 }
 
 #texto{
-  align-content: flex-end;
   background-color: rgb(226, 177, 86);
   text-decoration: none;
   border-radius: 2vh;
   margin: 1vh;
   padding: 1vw;
+  flex-grow: 3;
 }
 
 #textme{
@@ -222,4 +223,9 @@ h2{
   width: 3vh;
   margin: 0;
   padding: 0;
+}
+
+#side_foto{
+  width: 25rem;
+  margin-right: 3rem;
 }
