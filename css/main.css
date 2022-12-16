@@ -154,14 +154,6 @@ h2{
   flex-grow: 1;
 }
 
-#ulme{
-  padding-right: 22rem;
-  list-style: none;
-  align-content: flex-start;
-  padding-top: 1vh;
-  width: 14vw;
-}
-
 
 .sidebar{
   list-style: none;
@@ -228,4 +220,7 @@ h2{
 #side_foto{
   width: 25rem;
   margin-right: 3rem;
+  align-content: flex-start;
+  padding-top: 1vh;
+  width: 14vw;
 }
