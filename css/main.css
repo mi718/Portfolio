@@ -149,8 +149,9 @@ h2{
 
 #my_picture {
   display: flex;
-  width: 24vw;
+  width: 24rem;
   border-radius: 8%;
+  flex-grow: 1;
 }
 
 
@@ -181,7 +182,8 @@ h2{
   margin: 2rem;
 }
 
-#texto{
+.texto{
+  display: flex;
   background-color: rgb(226, 177, 86);
   text-decoration: none;
   border-radius: 2vh;
@@ -211,7 +213,7 @@ h2{
 
 .star{
   
-  width: 3vh;
+  width: 1.5rem;
   margin: 0;
   padding: 0;
 }
@@ -222,4 +224,5 @@ h2{
   align-content: flex-start;
   padding-top: 1vh;
   box-sizing: border-box;
+  
 }
