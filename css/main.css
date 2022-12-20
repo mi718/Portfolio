@@ -103,10 +103,18 @@ A:visited {
   background-color: rgb(199, 159, 73);
   font-family: monospace;
   padding-bottom:1px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h4{
+  font-size: 3rem;
+  padding-left: 1rem
 }
 
 .headerposition{
-    padding-left: 78vw;
+    padding-left: 69vw;
     align-self: center;
     padding-bottom: 2vh;
 }
@@ -117,7 +125,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 2vh;
+  padding-top: 2vh;  
 }
 
 nav p {
@@ -135,10 +143,11 @@ nav p {
 /* main page 2 */
 
 h2{
+  display: flex;
   font-size: 5rem;
   font-family: monospace;
   font-weight: bold;  
-  padding-left: 8%;
+  padding-left: 50%;
   background-color: rgb(226, 177, 86) ;
   
 }
@@ -221,8 +230,11 @@ h2{
 #side_foto{
   width: 25rem;
   margin-right: 3rem;
-  align-content: flex-start;
   padding-top: 1vh;
   box-sizing: border-box;
   
+}
+
+#name{
+  font-size: 3rem;
 }
