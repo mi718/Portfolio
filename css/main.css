@@ -76,7 +76,7 @@ border-radius: 20vh;
 }
 
 
-main {
+#main1 {
   align-self: center;
   flex-grow: 1;
 }
@@ -199,6 +199,7 @@ h2{
   justify-content: space-around;
   padding: 0;
   margin: 2rem;
+  flex-grow: 1;
 }
 
 .texto{
@@ -208,7 +209,7 @@ h2{
   border-radius: 2vh;
   margin: 1vh;
   padding: 1vw;
-  flex-grow: 3;
+  flex-grow: 1;
 }
 
 #textme{
@@ -259,4 +260,8 @@ h2{
 #extra a:hover{
   border: none;
   background-color: rgb(226, 177, 86);
+}
+
+#download{
+  padding: 0;
 }
