@@ -109,12 +109,11 @@ A:visited {
 }
 
 h4{
-  font-size: 3rem;
+  font-size: 2rem;
   padding-left: 1rem
 }
 
 .headerposition{
-    padding-left: 69vw;
     align-self: center;
     padding-bottom: 2vh;
 }
@@ -183,6 +182,17 @@ h2{
   box-sizing: border-box;
 }
 
+#extra  {
+  background-color: rgb(226, 177, 86);
+  width: 100%;
+  border-radius: 2rem;
+  margin-top: 0.5rem;
+  padding: 1vw;
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: lighter;
+}
+
 #text_pic{
   display: flex;
   list-style: none;
@@ -237,4 +247,16 @@ h2{
 
 #name{
   font-size: 3rem;
+}
+
+#extra a {
+  padding: 0;
+  color: rgb(55, 55, 242);
+  text-decoration: none;
+  
+}
+
+#extra a:hover{
+  border: none;
+  background-color: rgb(226, 177, 86);
 }
