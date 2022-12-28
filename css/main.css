@@ -4,7 +4,6 @@ html {
 
 body {
  background-color:rgb(255, 240, 201);
-
  align-self: flex-start;
  min-height: 100%;
  margin: 0;
@@ -142,13 +141,19 @@ nav p {
 /* main page 2 */
 
 h2{
-  display: flex;
   font-size: 5rem;
   font-family: monospace;
   font-weight: bold;  
-  padding-left: 50%;
-  background-color: rgb(226, 177, 86) ;
-  
+  background-color: rgb(226, 177, 86);
+}
+
+.left{
+  padding-left: 3rem;
+}
+
+#center{
+  padding-left: 36rem;
+  background-color: rgb(226, 177, 86);
 }
 
 #foto{
@@ -212,9 +217,88 @@ h2{
   flex-grow: 1;
 }
 
+.text2{
+  display: flex;
+  align-self: flex-end;
+  background-color: rgb(226, 177, 86);
+  text-decoration: none;
+  border-radius: 2vh;
+  margin: 1vh;
+  padding: 1vw;
+}
+
+.text3{
+  display: flex;
+  align-self: flex-start;
+  background-color: rgb(226, 177, 86);
+  text-decoration: none;
+  border-radius: 2vh;
+  margin: 1vh;
+  padding: 1vw;
+}
+
+.text4{
+  display: flex;
+  align-self: flex-end;
+  background-color: rgb(226, 177, 86);
+  text-decoration: none;
+  border-radius: 2vh;
+  
+}
+
+.school{
+ width: 13rem;
+ height: 13rem;
+}
+
+#imleeschool{
+  width: 29rem;
+  height: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  
+}
+
+#schoollist{
+  list-style: none;
+}
+
+#worklistyear{
+  list-style: none;
+}
+
+#worklist2text{
+  list-style: none;
+}
+
+.jobs{
+  font-size: 2rem;
+  font-family: monospace;
+  padding-top: 1.3rem;
+  padding-bottom: 1.5rem;
+  padding-right: 3rem;
+}
+
 #textme{
   font-family: monospace;
   font-size: 2rem;
+}
+
+.textdaten{
+  display: flex;
+  align-self: flex-end;
+  background-color: rgb(226, 177, 86);
+  text-decoration: none;
+  border-radius: 2vh;
+  margin: 1vh;
+  padding: 1vw;
+  }
+
+
+.title{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
 
 .sidebar a:hover {
