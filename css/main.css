@@ -76,7 +76,7 @@ border-radius: 20vh;
 }
 
 
-main {
+#main1 {
   align-self: center;
   flex-grow: 1;
 }
@@ -109,12 +109,11 @@ A:visited {
 }
 
 h4{
-  font-size: 3rem;
+  font-size: 2rem;
   padding-left: 1rem
 }
 
 .headerposition{
-    padding-left: 69vw;
     align-self: center;
     padding-bottom: 2vh;
 }
@@ -183,12 +182,24 @@ h2{
   box-sizing: border-box;
 }
 
+#extra  {
+  background-color: rgb(226, 177, 86);
+  width: 100%;
+  border-radius: 2rem;
+  margin-top: 0.5rem;
+  padding: 1vw;
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: lighter;
+}
+
 #text_pic{
   display: flex;
   list-style: none;
   justify-content: space-around;
   padding: 0;
   margin: 2rem;
+  flex-grow: 1;
 }
 
 .texto{
@@ -198,7 +209,7 @@ h2{
   border-radius: 2vh;
   margin: 1vh;
   padding: 1vw;
-  flex-grow: 3;
+  flex-grow: 1;
 }
 
 #textme{
@@ -237,4 +248,20 @@ h2{
 
 #name{
   font-size: 3rem;
+}
+
+#extra a {
+  padding: 0;
+  color: rgb(55, 55, 242);
+  text-decoration: none;
+  
+}
+
+#extra a:hover{
+  border: none;
+  background-color: rgb(226, 177, 86);
+}
+
+#download{
+  padding: 0;
 }
