@@ -169,7 +169,7 @@ h2{
 
 .linktop{
   font-size: 1rem;
-  background-color:rgb(255, 240, 201);
+  
   border-radius: 2rem;
 }
 
@@ -365,6 +365,7 @@ h2{
   display: flex;
   justify-content: space-around;
   border-radius:2vh ;
+  gap: 0.5rem;
 }
 
 .kenntnisse{
@@ -399,4 +400,30 @@ h3{
 #h3kenntnisse{
   padding-left: 0;
   padding: 2rem;
+}
+
+/* page Kontakt */
+
+div{
+  align-self: center;
+}
+
+
+.grid{
+  display: flex;
+  align-content: flex-end;
+  background-color: rgb(226, 177, 86);
+  border-radius: 4rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid img{
+  background-color:rgb(255, 240, 201);
+  padding: 4rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 3rem;
+  margin: 1rem;
 }
