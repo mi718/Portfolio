@@ -18,6 +18,10 @@ h1{
  
 }
 
+.active{
+  background-color: rgb(255, 240, 201);;
+}
+
 
 /* animation idex page */
 nav p a {
@@ -100,7 +104,7 @@ A:visited {
 .header2 {
   background-color: rgb(199, 159, 73);
   font-family: monospace;
-  height: 4rem;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,7 +155,7 @@ h2{
 }
 
 #center{
-  padding-left: 36rem;
+  padding-left: 36vw;
   background-color: rgb(226, 177, 86);
 }
 
@@ -168,8 +172,8 @@ h2{
 
 .linktop{
   font-size: 1rem;
-  
   border-radius: 2rem;
+
 }
 
 .sidebar{
@@ -294,15 +298,26 @@ h2{
 
 /* start of the "Daten" sector */
 
-.text2{
-  display: flex;
-  align-self: flex-end;
-  background-color: rgb(226, 177, 86);
-  text-decoration: none;
-  border-radius: 2vh;
-  margin: 1vh;
-  padding: 1vw;
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-gap: 1rem;
+  grid-auto-rows: auto;
 }
+
+.micafacts{
+  background-color:rgb(226, 177, 86) ;
+  
+  font-size: 2rem;
+  font-family: monospace;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 3rem;
+}
+
+
 
 /* start of the "Bildungsweg" sector */
 
@@ -333,14 +348,33 @@ h2{
   list-style: none;
 }
 
-/* start of the "Arbeitserfahrung" sector */
+/* start of the "Arbeitserfahrung" section */
+
+
+
+th, td {
+  text-align: left;
+  font-size: 2rem;
+  font-family: monospace;
+  padding: 1rem;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem;
+  
+  
+}
+
+th{
+  font-weight: lighter;
+  
+}
 .text4{
   display: flex;
   align-self: flex-end;
   background-color: rgb(226, 177, 86);
   text-decoration: none;
   border-radius: 2vh;
-  
 }
 
 #worklistyear{
@@ -358,19 +392,16 @@ h2{
   padding-bottom: 1.5rem;
   padding-right: 3rem;
 }
-/* start of the "Kenntnisse" sector */
+/* start of the "Kenntnisse" section */
 
 .colums{
   display: flex;
   justify-content: space-around;
-  border-radius:2vh ;
-  gap: 0.5rem;
 }
 
 .kenntnisse{
  
   align-items: center;
-
   background-color: rgb(226, 177, 86);
   border-radius: 1rem;
 }
@@ -401,7 +432,7 @@ h3{
   padding: 2rem;
 }
 
-/* page Kontakt */
+/* page contact */
 
 
 .grid{
