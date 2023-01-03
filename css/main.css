@@ -4,7 +4,6 @@ html {
 
 body {
  background-color:rgb(255, 240, 201);
-
  align-self: flex-start;
  min-height: 100%;
  margin: 0;
@@ -20,7 +19,7 @@ h1{
 }
 
 
-/* Animacion primera pagina */
+/* animation idex page */
 nav p a {
  padding: 1vh;
  color: black;
@@ -46,7 +45,7 @@ p{
   font-size: 1.5vh;
 }
 
-/* Enlaces a las proximas paginas */
+/* links to other pages (me/project/contact)*/
 .p1 {
  display: flex;
  font-size: 8vh;
@@ -87,7 +86,6 @@ A:link {
 }
 A:hover {
  color: black;
- font-family: monospace;
  text-decoration: none
 }
 A:visited {
@@ -102,7 +100,7 @@ A:visited {
 .header2 {
   background-color: rgb(199, 159, 73);
   font-family: monospace;
-  padding-bottom:1px ;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -134,21 +132,27 @@ nav p {
 .sections a:hover {
   
   border: 200vh;
-  background-color: rgb(255, 240, 201)
+  background-color: rgb(255, 240, 201);
 }
 
 
 
 /* main page 2 */
-
+/* general info ralated to page 2 (me.html) */
 h2{
-  display: flex;
   font-size: 5rem;
   font-family: monospace;
   font-weight: bold;  
-  padding-left: 50%;
-  background-color: rgb(226, 177, 86) ;
-  
+  background-color: rgb(226, 177, 86);
+}
+
+.left{
+  padding-left: 3rem;
+}
+
+#center{
+  padding-left: 36rem;
+  background-color: rgb(226, 177, 86);
 }
 
 #foto{
@@ -162,6 +166,11 @@ h2{
   flex-grow: 1;
 }
 
+.linktop{
+  font-size: 1rem;
+  
+  border-radius: 2rem;
+}
 
 .sidebar{
   list-style: none;
@@ -212,9 +221,26 @@ h2{
   flex-grow: 1;
 }
 
-#textme{
+#textme {
   font-family: monospace;
   font-size: 2rem;
+}
+
+.textdaten {
+  display: flex;
+  align-self: flex-end;
+  background-color: rgb(226, 177, 86);
+  text-decoration: none;
+  border-radius: 2vh;
+  margin: 1vh;
+  padding: 1vw;
+}
+
+
+.title {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
 
 .sidebar a:hover {
@@ -222,7 +248,7 @@ h2{
   background-color: rgb(255, 240, 201)
 }
 
-.sidebar a  {
+.sidebar a {
   padding: 1vh;
   color: black;
   text-decoration: none;
@@ -231,22 +257,22 @@ h2{
 }
 
 
-.star{
-  
+.star {
+
   width: 1.5rem;
   margin: 0;
   padding: 0;
 }
 
-#side_foto{
+#side_foto {
   width: 25rem;
   margin-right: 3rem;
   padding-top: 1vh;
   box-sizing: border-box;
-  
+
 }
 
-#name{
+#name {
   font-size: 3rem;
 }
 
@@ -254,14 +280,189 @@ h2{
   padding: 0;
   color: rgb(55, 55, 242);
   text-decoration: none;
-  
+
 }
 
-#extra a:hover{
+#extra a:hover {
   border: none;
   background-color: rgb(226, 177, 86);
 }
 
-#download{
+#download {
   padding: 0;
+}
+
+/* start of the "Daten" sector */
+
+.text2{
+  display: flex;
+  align-self: flex-end;
+  background-color: rgb(226, 177, 86);
+  text-decoration: none;
+  border-radius: 2vh;
+  margin: 1vh;
+  padding: 1vw;
+}
+
+/* start of the "Bildungsweg" sector */
+
+.text3{
+  display: flex;
+  align-self: flex-start;
+  background-color: rgb(226, 177, 86);
+  text-decoration: none;
+  border-radius: 2vh;
+  margin: 1vh;
+  padding: 1vw;
+}
+
+.school {
+  width: 13rem;
+  height: 13rem;
+}
+
+#imleeschool {
+  width: 29rem;
+  height: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+}
+
+#schoollist {
+  list-style: none;
+}
+
+/* start of the "Arbeitserfahrung" sector */
+.text4{
+  display: flex;
+  align-self: flex-end;
+  background-color: rgb(226, 177, 86);
+  text-decoration: none;
+  border-radius: 2vh;
+  
+}
+
+#worklistyear{
+  list-style: none;
+}
+
+#worklist2text{
+  list-style: none;
+}
+
+.jobs{
+  font-size: 2rem;
+  font-family: monospace;
+  padding-top: 1.3rem;
+  padding-bottom: 1.5rem;
+  padding-right: 3rem;
+}
+/* start of the "Kenntnisse" sector */
+
+.colums{
+  display: flex;
+  justify-content: space-around;
+  border-radius:2vh ;
+  gap: 0.5rem;
+}
+
+.kenntnisse{
+ 
+  align-items: center;
+
+  background-color: rgb(226, 177, 86);
+  border-radius: 1rem;
+}
+
+
+.textkenntnisse{
+  font-family: monospace;
+  flex-grow: 1;
+
+}
+.p-kenntnisse{
+  font-size: 1.1rem;
+  
+}
+
+h3{
+  display: flex;
+  align-items: center;
+  background-color:rgb(226, 177, 86);
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  padding-left: 11rem;
+  padding: 2rem;  
+}
+
+#h3kenntnisse{
+  padding-left: 0;
+  padding: 2rem;
+}
+
+/* page Kontakt */
+
+
+.grid{
+  align-self: center;
+  display: flex;
+  background-color: rgb(226, 177, 86);
+  border-radius: 4rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid img{
+  background-color:rgb(255, 240, 201);
+  padding: 4rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 3rem;
+  margin: 1rem;
+}
+/* Page Projekte main */
+
+.what-can-i{
+  color: aliceblue;
+  align-self: center;
+  padding: 4rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 3rem;
+  margin: 1rem;
+  font-family: monospace;
+  font-size: 5rem;
+  padding: 10rem;
+}
+
+#do1{
+  color: black;
+  width: 25rem;
+  background-image: url(../images/html4.jpg);}
+
+#do2{
+  color: aliceblue;
+  width: 24rem;
+  background-image: url(../images/pyhton1.jpg);
+  
+}
+
+.grid2 {
+  display: flex;
+  flex-grow: 1;
+  background-color: rgb(226, 177, 86);
+  border-radius: 4rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0.5rem;
+}
+
+.Description{
+  color: rgb(0, 0, 0);
+  grid-template-columns: 50% 50%;
+  font-size: 3rem;
+  margin: 2rem;
 }
