@@ -86,7 +86,8 @@ border-radius: 20vh;
 
 /* Link style */
 A:link {
- text-decoration: none
+ text-decoration: none;
+ color: black;
 }
 A:hover {
  color: black;
