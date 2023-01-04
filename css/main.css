@@ -12,7 +12,6 @@ body {
 }
 
 h1{
- display: flex;
  font-size: 13vh;
  font-family: monospace;
  
@@ -157,6 +156,7 @@ h2{
 
 #center{
   padding-left: 36vw;
+  font-size: 5vw;
   background-color: rgb(226, 177, 86);
 }
 
@@ -457,38 +457,30 @@ h3{
 /* Page Projekte main */
 
 .what-can-i{
-  color: aliceblue;
-  align-self: center;
   padding: 4rem;
-  width: 10rem;
-  height: 10rem;
   border-radius: 3rem;
-  margin: 1rem;
-  font-family: monospace;
-  font-size: 5rem;
-  padding: 10rem;
 }
 
 #do1{
   color: black;
-  width: 25rem;
-  background-image: url(../images/html4.jpg);}
+  width: 50vw;
+  height: 55vh;
+  border-radius: 6rem;
+  margin-right: 0;
+}
 
 #do2{
   color: aliceblue;
-  width: 24rem;
-  background-image: url(../images/pyhton1.jpg);
-  
+  width: 50vw;
+  height:  55vh;
+  border-radius: 6rem;
+  margin-left: 0;
 }
 
 .grid2 {
   display: flex;
-  flex-grow: 1;
   background-color: rgb(226, 177, 86);
   border-radius: 4rem;
-  gap: 1rem;
-  display: grid;
-  grid-template-columns: 50% 50%;
   margin: 0.5rem;
 }
 
@@ -496,5 +488,4 @@ h3{
   color: rgb(0, 0, 0);
   grid-template-columns: 50% 50%;
   font-size: 3rem;
-  margin: 2rem;
 }
