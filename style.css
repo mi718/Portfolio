@@ -201,6 +201,11 @@ h2 {
   width: 35vw;
   margin-right: 15rem;
   position: relative;
+  transition: transform 1s;
+}
+
+#atlas:hover{
+  transform: scale(1.1);
 }
 
 /* ----------------------------------- */
@@ -218,6 +223,10 @@ h2 {
 
 #skills:hover {
   transform: scale(1.1);
+}
+
+#skillsTxt{
+  margin-top: 0;
 }
 
 #blackjack {
