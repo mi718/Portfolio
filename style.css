@@ -1,26 +1,74 @@
 html {
- height: 100%;
+  user-select: none;
+  height: 300%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
 }
+
+/* ----------------------------------- */
 
 body {
- background-color:rgb(255, 240, 201);
- align-self: flex-start;
- min-height: 100%;
- margin: 0;
- display: flex;
- flex-direction: column;
+  margin: 0;
+  background:
+    /* rgb(180, 180, 180); */
+    linear-gradient(10deg, rgb(0, 0, 0), #fff);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1{
- font-size: 13vh;
- font-family: monospace;
- 
+/* ----------------------------------- */
+A:link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
-.active{
-  background-color: rgb(255, 240, 201);;
+A:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none
 }
 
+A:visited {
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+  text-decoration: none
+}
+
+/* ----------------------------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(90, 90, 90);
+  color: #fff;
+  align-items: center;
+}
+
+h2 {
+  margin-left: 40px;
+}
+
+.lineTitle {
+  background-color: #fff;
+  height: 2px;
+}
+
+#options {
+  display: flex;
+  margin-right: 20px;
+}
+
+.option {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.option:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+/* ----------------------------------- */
 
 /* animation idex page */
 nav p a {
