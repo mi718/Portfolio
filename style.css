@@ -14,6 +14,12 @@ body {
     linear-gradient(10deg, rgb(0, 0, 0), #fff);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: large;
+}
+
+main{
+  max-width: 90%;
+  margin-inline: auto;
 }
 
 /* ----------------------------------- */
@@ -41,6 +47,7 @@ header {
   background-color: rgb(90, 90, 90);
   color: #fff;
   align-items: center;
+  flex-wrap: wrap;  
 }
 
 h2 {
@@ -54,14 +61,14 @@ h2 {
 
 #options {
   display: flex;
-  margin-right: 20px;
+  margin-right: 2%;
+  margin-left: 10rem;
 }
 
 .option {
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
-
 }
 
 .option:hover {
@@ -90,7 +97,7 @@ h2 {
   height: 400px;
   background: rgb(0, 0, 0);
   border-radius: 50%;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .boxCircle::before {
@@ -127,7 +134,7 @@ h2 {
 
 .aContent {
   position: absolute;
-  inset: 30px;
+  inset: 40px;
   border: 6px solid rgb(0, 0, 0);
   z-index: 3;
   border-radius: 50%;
@@ -156,7 +163,7 @@ h2 {
 }
 
 .TxtSectionRight {
-  min-width: 25rem;
+  min-width: 20rem;
   flex: 1;
 }
 
@@ -175,48 +182,46 @@ h2 {
 }
 
 /* ----------------------------------- */
-
-.TxtSectionLeft {
-  width: 30%;
-  margin-left: 15%;
+.Information-Me{
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: 10%;
+  gap: 15%;
+  align-items: center;
 }
 
-#myCV {
-  background-color: black;
-  border-radius: 10px;
-}
-
-#myCV:hover {
-  opacity: 50%;
-}
-
-#cvIcon {
-  width: 20px;
-  margin: 5px;
-  margin-top: 8px;
-}
-
-#atlas {
-  width: 35vw;
-  margin-right: 15rem;
-  position: relative;
+#atlas{
+  max-width: 25rem;
   transition: transform 1s;
+  
 }
 
 #atlas:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
+.TxtMe{
+  max-width: 40%;
+}
+
+#cvIcon{
+  width: 20px;
+}
+
+button{
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
 /* ----------------------------------- */
 
 #skills {
+  display: flex;
+  width: 100%;
+  gap: 40%;
   background-color: rgb(185, 185, 185);
-  margin-left: 150px;
-  margin-right: 150px;
   border-radius: 20px;
   box-shadow: 10px 10px 30px rgb(48, 48, 48);
-  padding-top: 40px;
-  padding-bottom: 40px;
   transition: transform 1s;
 }
 
@@ -226,6 +231,7 @@ h2 {
 
 #skillsTxt{
   margin-top: 0;
+  margin-block: auto;
 }
 
 #blackjack {
@@ -281,7 +287,7 @@ h2 {
 }
 
 #kontaktWays {
-  margin-left: 43%;
+  margin-inline: auto;
 }
 
 .kontaktWay {
@@ -295,14 +301,112 @@ h2 {
 
 /* ----------------------------------- */
 
+@media screen and (max-width: 1350px) {
+  .Information {
+    margin-inline: 4rem;
+  }
+
+  .TxtMe {
+    min-width: 100%;
+  }
+
+  .Information-Me {
+    margin-inline: 4rem;
+  }
+  #atlas {
+    margin-left: 5vw;
+    margin-right: auto;
+}
+}
+
 @media screen and (max-width: 1000px) {
   .Information{
     margin-inline: 3rem;
+  }
+  .Information-Me {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 932px) {
+  #atlas {
+    margin-top: 5rem;
+  }
+
+  .TxtMe {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  h2 {
+    margin-inline: auto;
+  }
+
+  #options {
+
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .boxCircle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .boxCircle::before {
+    inset: -50px 190px;
+  }
+
+  .boxCircle::after {
+    inset: 3px;
+  }
+
+  .aContent {
+    border: 3px solid rgb(0, 0, 0);
   }
 }
 
 @media screen and (max-width: 500px) {
   .Information {
     margin-inline: 2rem;
+    gap: 0;
   }
+
+  .Information-Me{
+    margin-inline: 2rem;
+  }
+
+  #atlas{
+    width: 15rem;
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 388px) {
+
+  .TxtSectionRight {
+    text-align: center;
+    }
+  .TxtMe{
+    text-align: center;
+  }
+    .boxCircle {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .boxCircle::before {
+      inset: 100px 100px;
+    }
+  
+    .boxCircle::after {
+      inset: 2px;
+    }
+    .boxCircle:hover::before {
+      inset: 0px 60px;
+    }
 }
