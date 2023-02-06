@@ -181,17 +181,20 @@ h2 {
   height: 2px;
 }
 
+
+
 /* ----------------------------------- */
 .Information-Me{
   display: flex;
   flex-wrap: wrap;
   margin-inline: 10%;
-  gap: 15%;
+  gap: 10%;
   align-items: center;
 }
 
 #atlas{
   max-width: 25rem;
+  min-width: 15rem;
   transition: transform 1s;
   
 }
@@ -200,8 +203,8 @@ h2 {
   transform: scale(1.2);
 }
 
-.TxtMe{
-  max-width: 40%;
+#AboutMe{
+  max-width: 25rem;
 }
 
 #cvIcon{
@@ -217,12 +220,17 @@ button{
 
 #skills {
   display: flex;
-  width: 100%;
-  gap: 40%;
-  background-color: rgb(185, 185, 185);
+  align-content: center;
+  background-color: rgb(173, 173, 173);
+  gap: 30%;
   border-radius: 20px;
   box-shadow: 10px 10px 30px rgb(48, 48, 48);
   transition: transform 1s;
+  padding: 3rem;
+}
+
+#projects{
+  margin: 1rem; 
 }
 
 #skills:hover {
@@ -241,29 +249,27 @@ button{
 
 #blackjack:hover {
   opacity: 50%;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #passanger {
   width: 100px;
-  margin-top: 50px;
   transition: transform 1s;
 }
 
 #passanger:hover {
   opacity: 50%;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #googleExtension {
   width: 100px;
-  margin-top: 50px;
   transition: transform 1s;
 }
 
 #googleExtension:hover {
   opacity: 50%;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* ----------------------------------- */
@@ -287,7 +293,7 @@ button{
 }
 
 #kontaktWays {
-  margin-inline: auto;
+  text-align: center;
 }
 
 .kontaktWay {
@@ -306,7 +312,7 @@ button{
     margin-inline: 4rem;
   }
 
-  .TxtMe {
+  #aboutMe {
     min-width: 100%;
   }
 
@@ -325,7 +331,10 @@ button{
   }
   .Information-Me {
     margin-left: 3rem;
+    margin-top: 0;
   }
+
+
 }
 
 @media screen and (max-width: 932px) {
@@ -336,9 +345,28 @@ button{
   .TxtMe {
     min-width: 100%;
   }
+
+  #skills{
+    display: block;
+  }
+
+  #projects{
+    margin-bottom: 5rem;
+    padding-inline: auto;
+  }
+
+  #kontaktWays{
+    display: block;
+  }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 714px){
+  #skills{
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 684px) {
 
   h2 {
     margin-inline: auto;
@@ -351,6 +379,11 @@ button{
 }
 
 @media screen and (max-width: 590px) {
+  .Information {
+    margin-inline: 3rem;
+    margin-top: 5rem;
+ }
+
   .boxCircle {
     width: 250px;
     height: 250px;
@@ -384,7 +417,11 @@ button{
     margin-left: 1rem;
     margin-right: auto;
   }
-}
+
+     #projects {
+       margin-left: 18%;
+     }
+} 
 
 @media screen and (max-width: 388px) {
 
@@ -408,5 +445,14 @@ button{
     }
     .boxCircle:hover::before {
       inset: 0px 60px;
+    }
+
+    #skills {
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    #projects{
+      margin-left: 18%;
     }
 }
