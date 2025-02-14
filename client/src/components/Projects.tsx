@@ -109,14 +109,39 @@ export default function Projects() {
         </div>
         <Modal isOpen={!!selectedProject} onClose={closeModal}>
           {selectedProject && (
-              <div>
-                <h2>{selectedProject.title}</h2>
-                <p>{selectedProject.details.overview}</p>
-                <ul>
-                  {selectedProject.details.features.map((feature, index) => (
-                      <li key={index}>{feature}</li>
-                  ))}
-                </ul>
+              <div className="modal-project">
+                <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    className="modal-project-image"
+                />
+                <h2 className="modal-project-title">{selectedProject.title}</h2>
+                <p className="modal-project-overview">{selectedProject.details.overview}</p>
+
+                <div className="modal-project-section">
+                  <h3>Key Features</h3>
+                  <ul className="modal-project-features">
+                    {selectedProject.details.features.map((feature, index) => (
+                        <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="modal-project-section">
+                  <h3>Technologies Used</h3>
+                  <div className="modal-project-technologies">
+                    {selectedProject.details.technologies.map((tech, index) => (
+                        <span key={index} className="technology-tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="modal-project-links">
+                  <a href="#" className="modal-project-link live">View Live Demo</a>
+                  <a href="#" className="modal-project-link github">View on GitHub</a>
+                </div>
               </div>
           )}
         </Modal>

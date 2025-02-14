@@ -6,6 +6,7 @@
   --primary: #000000;
   --card-bg: #ffffff;
   --card-border: rgba(0, 0, 0, 0.1);
+  --demo: #9a18ed;
   --nav-bg: rgba(255, 255, 255, 0.9);
   --skill-dot: #000000;
   --accent: transparent;
@@ -21,7 +22,7 @@
   --card-border: rgba(255, 255, 255, 0.1);
   --nav-bg: rgba(26, 26, 26, 0.9);
   --skill-dot: #ffffff;
-  --accent: rgba(167, 139, 250, 0.1);
+  --accent: rgba(64, 13, 216, 0.1);
   --accent-glow: 0 0 20px rgba(167, 139, 250, 0.2);
 }
 
@@ -29,6 +30,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 5rem;
 }
 
 body {
@@ -322,12 +327,89 @@ body {
 }
 
 .modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 500px;
-  width: 100%;
+  background: var(--card-bg);
+  padding: 32px;
+  border-radius: 16px;
+  max-width: 800px;
+  width: 90%;
   position: relative;
+  color: var(--text);
+}
+
+.modal-project-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.modal-project-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.modal-project-overview {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: var(--text-muted);
+}
+
+.modal-project-section {
+  margin-bottom: 24px;
+}
+
+.modal-project-section h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.modal-project-features {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.modal-project-features li {
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+.modal-project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.modal-project-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.modal-project-link {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.modal-project-link.live {
+  background: var(--demo);
+  color: var(--background);
+}
+
+.modal-project-link.github {
+  border: 1px solid var(--accent);
+  color: var(--text);
+}
+
+.modal-project-link:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
 
 .modal-close {
