@@ -2,11 +2,22 @@ import { useRef, useState } from 'react';
 import { motion, useInView } from "framer-motion";
 import Modal from './Modal';
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  details: {
+    overview: string;
+    features: string[];
+    technologies: string[];
+  };
+}
+
+const projects: Project[] = [
   {
     title: "E-commerce Platform",
     description: "A modern e-commerce solution with real-time inventory management",
-    image: "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
     details: {
       overview: "A full-featured e-commerce platform built with React and Node.js",
       features: [
@@ -51,14 +62,14 @@ const projects = [
 ];
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: false,
     margin: "-100px"
   });
 
-  const handleProjectClick = (project) => {
+  const handleProjectClick = (project: Project) => {
     setSelectedProject(project);
   };
 
@@ -77,7 +88,7 @@ export default function Projects() {
           >
             <h2 className="section-title">Featured Projects</h2>
             <div className="projects-grid">
-              {projects.map((project, index) => (
+              {projects.map((project: Project, index: number) => (
                   <motion.div
                       key={index}
                       className="project-card"
@@ -95,7 +106,7 @@ export default function Projects() {
                       <h3 className="project-title">{project.title}</h3>
                       <p className="project-description">{project.description}</p>
                       <div className="project-technologies">
-                        {project.details.technologies.map((tech, index) => (
+                        {project.details.technologies.map((tech: string, index: number) => (
                             <span key={index} className="technology-tag">
                         {tech}
                       </span>
@@ -117,27 +128,24 @@ export default function Projects() {
                 />
                 <h2 className="modal-project-title">{selectedProject.title}</h2>
                 <p className="modal-project-overview">{selectedProject.details.overview}</p>
-
                 <div className="modal-project-section">
                   <h3>Key Features</h3>
                   <ul className="modal-project-features">
-                    {selectedProject.details.features.map((feature, index) => (
+                    {selectedProject.details.features.map((feature: string, index: number) => (
                         <li key={index}>{feature}</li>
                     ))}
                   </ul>
                 </div>
-
                 <div className="modal-project-section">
                   <h3>Technologies Used</h3>
                   <div className="modal-project-technologies">
-                    {selectedProject.details.technologies.map((tech, index) => (
+                    {selectedProject.details.technologies.map((tech: string, index: number) => (
                         <span key={index} className="technology-tag">
-                        {tech}
-                      </span>
+                    {tech}
+                  </span>
                     ))}
                   </div>
                 </div>
-
                 <div className="modal-project-links">
                   <a href="#" className="modal-project-link live">View Live Demo</a>
                   <a href="#" className="modal-project-link github">View on GitHub</a>

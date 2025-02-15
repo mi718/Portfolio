@@ -1,3 +1,4 @@
+
 import { useRef } from 'react';
 import { motion, useInView } from "framer-motion";
 
@@ -15,32 +16,44 @@ export default function Skills() {
   });
 
   return (
-    <section id="skills" className="section section-alt">
-      <div className="container">
-        <motion.div
-          ref={ref}
-          initial={{ x: -100, opacity: 0 }}
-          animate={isInView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <h2 className="section-title">Skills & Expertise</h2>
-          <div className="skills-grid">
-            {skills.map((skill, index) => (
-              <div key={index} className="skill-card">
-                <h3 className="skill-title">{skill.category}</h3>
-                <ul className="skill-list">
-                  {skill.items.map((item, i) => (
-                    <li key={i} className="skill-item">
-                      <span className="skill-dot" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+      <section id="skills" className="section section-alt">
+        <div className="container">
+          <motion.div
+              ref={ref}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 0.5 }}
+          >
+            <motion.div
+                initial={{ y: 50 }}
+                animate={isInView ? { y: 0 } : { y: 50 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <h2 className="section-title">Skills & Expertise</h2>
+              <div className="skills-grid">
+                {skills.map((skill, index) => (
+                    <motion.div
+                        key={index}
+                        className="skill-card"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                    >
+                      <h3 className="skill-title">{skill.category}</h3>
+                      <ul className="skill-list">
+                        {skill.items.map((item, i) => (
+                            <li key={i} className="skill-item">
+                              <span className="skill-dot" />
+                              {item}
+                            </li>
+                        ))}
+                      </ul>
+                    </motion.div>
+                ))}
               </div>
-            ))}
-          </div>
-        </motion.div>
-      </div>
-    </section>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
   );
 }
