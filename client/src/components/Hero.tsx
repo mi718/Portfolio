@@ -14,8 +14,7 @@ export default function Hero() {
             Hello, I'm Micael
           </motion.h1>
           <motion.p className="hero-subtitle">
-            A passionate frontend developer crafting beautiful digital experiences
-          </motion.p>
+            Building innovative digital solutions with React, Java, and JavaScript to simplify experiences.          </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

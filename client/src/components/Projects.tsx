@@ -1,11 +1,17 @@
 import { useRef, useState } from 'react';
 import { motion, useInView } from "framer-motion";
 import Modal from './Modal';
+import ruckZuckImage from '../assests/Logo.svg';
+import BJ from '../assests/BlackJack.png';
+import BlackjackBanner from '../assests/BlackjackBanner.png';
+import RKBanner from '../assests/RKBanner.png';
 
 interface Project {
   title: string;
   description: string;
   image: string;
+  banner: string;
+  link?: string;
   details: {
     overview: string;
     features: string[];
@@ -15,9 +21,11 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "E-commerce Platform",
+    title: "RuckZuck Webpage",
     description: "A modern e-commerce solution with real-time inventory management",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
+    image: ruckZuckImage,
+    banner: RKBanner,
+    link: "https://ruckzuck.tools",
     details: {
       overview: "A full-featured e-commerce platform built with React and Node.js",
       features: [
@@ -26,13 +34,14 @@ const projects: Project[] = [
         "Customer reviews and ratings",
         "Advanced search and filtering"
       ],
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"]
+      technologies: ["React", "Node.js", ".NET", "API Integration"]
     }
   },
   {
-    title: "Analytics Dashboard",
+    title: "Poker Game",
     description: "Data visualization platform for business intelligence",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
+    image: BJ,
+    banner: BlackjackBanner,
     details: {
       overview: "A comprehensive analytics dashboard for business metrics",
       features: [
@@ -41,13 +50,14 @@ const projects: Project[] = [
         "Real-time data updates",
         "Export functionality"
       ],
-      technologies: ["React", "D3.js", "Firebase", "Material-UI"]
+      technologies: ["React", "Typescript", "Material-UI"]
     }
   },
   {
-    title: "Social Media App",
+    title: "CourseClock",
     description: "Feature-rich social platform with real-time messaging",
     image: "https://images.unsplash.com/photo-1664580618281-fbc47baf6edf",
+    banner: RKBanner,
     details: {
       overview: "A modern social networking platform with real-time features",
       features: [
@@ -122,7 +132,7 @@ export default function Projects() {
           {selectedProject && (
               <div className="modal-project">
                 <img
-                    src={selectedProject.image}
+                    src={selectedProject.banner}
                     alt={selectedProject.title}
                     className="modal-project-image"
                 />
@@ -147,7 +157,7 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="modal-project-links">
-                  <a href="#" className="modal-project-link live">View Live Demo</a>
+                  <a href={selectedProject.link} className="modal-project-link live">View Live Demo</a>
                   <a href="#" className="modal-project-link github">View on GitHub</a>
                 </div>
               </div>

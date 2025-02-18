@@ -22,8 +22,8 @@ export default function DustParticles() {
         id: i,
         x: Math.random() * 100,
         y: Math.random() * 100,
-        size: Math.random() * 15 + 2, // Increased size range from (1-4) to (2-7)
-        duration: Math.random() * 15 + 15, // Increased duration range
+        size: Math.random() * 25 + 2, // Increased size range from (1-4) to (2-7)
+        duration: Math.random() * 13 + 15, // Increased duration range
         delay: Math.random() * -20
       });
     }

@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Card, CardContent } from "./ui/card";
+import ProfilePicture from '../assests/ProfilePicture.jpeg';
 
 export default function About() {
   const ref = useRef(null);
@@ -22,20 +22,14 @@ export default function About() {
           <div className="about-grid">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1576558656222-ba66febe3dec"
+                src={ProfilePicture}
                 alt="Ryan Hoffman"
                 className="about-image"
               />
             </div>
             <div className="about-content">
               <p className="about-text">
-                With over 5 years of experience in web development, I specialize in creating 
-                intuitive and performant user interfaces. My passion lies in combining clean 
-                code with beautiful design to deliver exceptional user experiences.
-              </p>
-              <p className="about-text">
-                When I'm not coding, you can find me exploring new technologies, contributing 
-                to open-source projects, or sharing my knowledge through technical writing.
+                Hey, I’m Micael Stäubli—20 years old and currently in my second semester of Informatics. With 1 year of hands-on experience with React and JavaScript, and 2 years working with Java, I’m passionate about building both backend and frontend solutions. Always learning, always creating—code is my playground!
               </p>
             </div>
           </div>
